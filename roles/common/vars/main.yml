@@ -1,0 +1,6 @@
+packages:
+  - curl
+  - software-properties-common
+  - tig
+  - tmux
+  - zsh

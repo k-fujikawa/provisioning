@@ -1,0 +1,16 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: yes
+  roles:
+    - role: common
+    - role: git-lfs
+
+    - role: geerlingguy.docker
+      docker_compose_version: "1.22.0"
+      docker_users: []
+
+    - role: uchida.nvidia-driver
+      nvidia_driver_repo: nvidia
+    - role: uchida.nvidia-docker
+      nvidia_docker_version: 2.0.3

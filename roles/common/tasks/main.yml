@@ -1,0 +1,8 @@
+- block:
+  - name: Install base apt packages
+    apt:
+      name: "{{ packages }}"
+      state: present
+
+  tags:
+    - common

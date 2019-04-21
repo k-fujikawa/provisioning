@@ -1,0 +1,13 @@
+version: "2.3"
+services:
+  test:
+    image: ubuntu-provisioning
+    network_mode: "bridge"
+    volumes:
+      - $PWD:/work
+    build:
+      context: .
+    command: /bin/bash -c """
+      ansible-galaxy install -r requirements.yml
+      ansible-playbook site.yml
+      """
