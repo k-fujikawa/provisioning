@@ -8,6 +8,6 @@ services:
     build:
       context: .
     command: /bin/bash -c """
-      ansible-galaxy install -r requirements.yml
+      ansible-galaxy install -r requirements.yml &&
       ansible-playbook site.yml
       """
