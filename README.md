@@ -1,5 +1,7 @@
 # Ubuntu provisioning
 
+[![CircleCI](https://circleci.com/gh/k-fujikawa/ubuntu-provisioning.svg?style=shield)](https://circleci.com/gh/k-fujikawa/ubuntu-provisioning)
+
 ## Install Ansible
 
 ```
