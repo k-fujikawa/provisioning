@@ -8,9 +8,11 @@
 
     - role: geerlingguy.docker
       docker_compose_version: "1.22.0"
-      docker_users: []
+      # docker_users: ["{{ ansible_env.USER }}"]
 
     - role: uchida.nvidia-driver
       nvidia_driver_repo: nvidia
-    - role: uchida.nvidia-docker
+
+    - role: nvidia-docker
       nvidia_docker_version: 2.0.3
+      nvidia_docker_docker_version: 18.09
