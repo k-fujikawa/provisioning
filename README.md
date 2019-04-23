@@ -22,7 +22,7 @@ cd $HOME/git/github.com/k-fujikawa/ubuntu-provisioning
 
 ```
 ansible-galaxy install -r requirements.yml
-sudo ansible-playbook site.yml
+ansible-playbook site.yml
 ```
 
 ## Re-login
