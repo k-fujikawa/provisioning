@@ -1,18 +1,23 @@
 ---
 - hosts: localhost
   connection: local
-  gather_facts: yes
   roles:
     - role: common
+      become: yes
+
     - role: git-lfs
+      become: yes
 
     - role: geerlingguy.docker
       docker_compose_version: "1.22.0"
-      # docker_users: ["{{ ansible_env.USER }}"]
+      docker_users: ["{{ ansible_user_id }}"]
+      become: yes
 
     - role: uchida.nvidia-driver
       nvidia_driver_repo: nvidia
+      become: yes
 
     - role: nvidia-docker
       nvidia_docker_version: 2.0.3
       nvidia_docker_docker_version: 18.09
+      become: yes
