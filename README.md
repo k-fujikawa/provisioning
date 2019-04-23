@@ -5,9 +5,9 @@
 ## Install Ansible
 
 ```
-sudo apt-get update -y && apt-get install -y software-properties-common
+sudo apt-get update -y && sudo apt-get install -y software-properties-common
 sudo apt-add-repository -y ppa:ansible/ansible
-sudo apt-get update -y && apt-get install -y ansible
+sudo apt-get update -y && sudo apt-get install -y ansible
 ```
 
 ## Clone this repository
@@ -23,4 +23,16 @@ cd $HOME/git/github.com/k-fujikawa/ubuntu-provisioning
 ```
 ansible-galaxy install -r requirements.yml
 sudo ansible-playbook site.yml
+```
+
+## Re-login
+
+```
+logout
+```
+
+## Check if GPUs are available
+
+```
+docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 ```
