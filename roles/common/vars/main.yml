@@ -3,4 +3,5 @@ packages:
   - software-properties-common
   - tig
   - tmux
+  - vim
   - zsh
