@@ -1,7 +1,12 @@
 packages:
-  - curl
+  - build-essential
   - software-properties-common
+  - curl
+  - gawk
+  - language-pack-ja
+  - make
   - tig
   - tmux
   - vim
   - zsh
+  - zip
