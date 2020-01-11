@@ -8,6 +8,9 @@
     - role: git-lfs
       become: yes
 
+    - role: vim
+      become: yes
+
     - role: geerlingguy.docker
       docker_compose_version: "1.22.0"
       docker_users: ["{{ ansible_user_id }}"]

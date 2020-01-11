@@ -1,0 +1,5 @@
+- block:
+  - name: execute install script
+    command: update-alternatives --set editor /usr/bin/vim.basic
+  tags:
+    - vim
