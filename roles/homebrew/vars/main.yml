@@ -1,3 +1,6 @@
+taps:
+  - homebrew/cask-fonts
+
 packages:
   - ansible
   - direnv

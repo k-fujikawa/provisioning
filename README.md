@@ -49,7 +49,7 @@ docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-#### Install ansible
+#### Install Ansible
 
 ```
 brew install ansible

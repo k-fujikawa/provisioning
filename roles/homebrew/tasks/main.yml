@@ -1,4 +1,9 @@
 - block:
+  - name: homebrew tap
+    homebrew_tap:
+      name: "{{ taps }}"
+      state: present
+
   - name: homebrew update
     homebrew:
       update_homebrew: true
