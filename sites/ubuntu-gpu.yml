@@ -2,7 +2,7 @@
 - hosts: localhost
   connection: local
   roles:
-    - role: common
+    - role: apt
       become: yes
 
     - role: git-lfs

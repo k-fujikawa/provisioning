@@ -1,0 +1,9 @@
+mas_installed_apps:
+  - { id: 409183694, name: Keynote }
+  - { id: 405399194, name: Kindle }
+  - { id: 441258766, name: Magnet }
+  - { id: 494803304, name: WiFi Explorer }
+  - { id: 803453959, name: Slack }
+  - { id: 1278508951, name: Trello }
+  - { id: 1333542190, name: 1Password }
+mas_upgrade_all_apps: True

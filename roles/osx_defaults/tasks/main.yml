@@ -1,0 +1,48 @@
+- block:
+  - name: キーリピート検知待ち時間
+    osx_defaults:
+      key: InitialKeyRepeat
+      type: int
+      value: 13
+      state: present
+
+  - name: キーリピート間隔時間
+    osx_defaults:
+      key: KeyRepeat
+      type: int
+      value: 3
+      state: present
+
+  - name: Trackpad Clicking
+    osx_defaults:
+      key: Clicking
+      type: bool
+      value: true
+      state: present
+
+  - name: Dock autohide
+    osx_defaults:
+      domain: com.apple.dock
+      key: autohide
+      type: bool
+      value: true
+      state: present    
+
+  - name: バッテリー残量設定
+    osx_defaults:
+      domain: com.apple.menuextra.battery
+      key: ShowPercent
+      type: string
+      value: YES
+      state: present
+
+  - name: Show dotfiles in Finder
+    osx_defaults:
+      domain: com.apple.finder
+      key: AppleShowAllFiles
+      type: string
+      value: True
+      state: present
+
+  tags:
+    - osx_defaults

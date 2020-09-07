@@ -1,6 +1,6 @@
 version: "2.3"
 services:
-  test:
+  ubuntu:
     image: ubuntu-provisioning
     network_mode: "bridge"
     volumes:
@@ -9,7 +9,7 @@ services:
       - ANSIBLE_PLAYBOOK_OPTIONS=--
     build:
       context: .
-    command: /bin/bash -c """
+    command: bash -c """
       ansible-galaxy install -r requirements.yml &&
-      ansible-playbook site.yml
+      ansible-playbook sites/ubuntu-gpu.yml
       """

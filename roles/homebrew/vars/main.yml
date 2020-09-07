@@ -1,0 +1,11 @@
+packages:
+  - ansible
+  - direnv
+  - git-lfs
+  - htop
+  - mas
+  - nvim
+  - tig
+  - tmux
+  - wget
+  - zsh
