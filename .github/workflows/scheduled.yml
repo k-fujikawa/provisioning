@@ -1,4 +1,4 @@
-name: Provisioning test for Ubuntu
+name: Provisioning test for Ubuntu [Schedule]
 
 on:
   schedule:
