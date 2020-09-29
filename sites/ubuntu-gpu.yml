@@ -12,12 +12,14 @@
       become: yes
 
     - role: geerlingguy.docker
+      docker_package: "docker-{{ docker_edition }}=5:18.09.5~3-0~ubuntu-bionic"
       docker_compose_version: "1.22.0"
       docker_users: ["{{ ansible_user_id }}"]
       become: yes
 
-    - role: uchida.nvidia-driver
-      nvidia_driver_repo: nvidia
+    - role: nvidia.nvidia_driver
+      nvidia_driver_package_version: 418.40.04-1
+      nvidia_driver_skip_reboot: yes
       become: yes
 
     - role: nvidia-docker

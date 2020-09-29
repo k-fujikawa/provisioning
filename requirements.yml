@@ -1,3 +1,2 @@
 - src: geerlingguy.docker
-- src: uchida.nvidia-driver
-- src: uchida.nvidia-docker
+- src: nvidia.nvidia_driver
