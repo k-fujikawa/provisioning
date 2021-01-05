@@ -1,6 +1,6 @@
 # Provisioning
 
-![](https://github.com/k-fujikawa/provisioning/workflows/Provisioning%20test%20for%20Ubuntu/badge.svg)
+![](https://github.com/k-fujikawa/provisioning/workflows/Ubuntu-GPU/badge.svg)
 
 - [Ubuntu](#ubuntu)
 - [MacOS](#MacOS)

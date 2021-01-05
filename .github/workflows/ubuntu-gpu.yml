@@ -1,0 +1,19 @@
+name: Ubuntu-GPU
+on:
+  push:
+  schedule:
+    - cron: "0 0 * * 6" # UTC (am 9:00 JST every Saturday) 
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install ansible
+        run: |
+          sudo apt-get update -y && sudo apt-get install -y software-properties-common
+          sudo apt-add-repository ppa:ansible/ansible
+          sudo apt-get update -y && sudo apt-get install -y ansible
+      - name: Install ansible-galaxy modules
+        run: ansible-galaxy install -r requirements.yml --force
+      - name: Run ansible playbooks
+        run: ansible-playbook sites/ubuntu-gpu.yml
