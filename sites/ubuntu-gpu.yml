@@ -17,8 +17,10 @@
       docker_users: ["{{ ansible_user_id }}"]
       become: yes
 
+    # Find nvidia driver version below:
+    # https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/
     - role: nvidia.nvidia_driver
-      nvidia_driver_package_version: 418.40.04-1
+      nvidia_driver_package_version: "440.118.02-1"  # CUDA 10.2
       nvidia_driver_skip_reboot: yes
       become: yes
 
