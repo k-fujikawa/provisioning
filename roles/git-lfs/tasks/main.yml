@@ -25,6 +25,7 @@
       name: git-lfs
       update_cache: yes
       install_recommends: no
+    when: '"git-lfs" not in ansible_facts.packages'
 
   tags:
     - git-lfs
