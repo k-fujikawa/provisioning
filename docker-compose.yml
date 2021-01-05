@@ -10,6 +10,6 @@ services:
     build:
       context: .
     command: bash -c """
-      ansible-galaxy install -r requirements.yml &&
+      ansible-galaxy install -r requirements.yml --force &&
       ansible-playbook sites/ubuntu-gpu.yml
       """
