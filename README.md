@@ -1,6 +1,6 @@
 # Provisioning
 
-![](https://github.com/k-fujikawa/provisioning/workflows/Ubuntu-GPU/badge.svg)
+![](https://github.com/k-fujikawa/provisioning/workflows/ubuntu-cuda-10.2/badge.svg)
 
 - [Ubuntu](#ubuntu)
 - [MacOS](#MacOS)
@@ -26,7 +26,7 @@ cd $HOME/git/github.com/k-fujikawa/provisioning
 
 ```
 ansible-galaxy install -r requirements.yml
-ansible-playbook sites/ubuntu-gpu.yml --ask-become-pass
+ansible-playbook sites/ubuntu-cuda-10.2.yml --ask-become-pass
 ```
 
 #### Re-login

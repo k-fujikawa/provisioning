@@ -1,4 +1,4 @@
-name: Ubuntu-GPU
+name: ubuntu-cuda-10.2
 on:
   push:
   schedule:
@@ -16,4 +16,4 @@ jobs:
       - name: Install ansible-galaxy modules
         run: ansible-galaxy install -r requirements.yml --force
       - name: Run ansible playbooks
-        run: ansible-playbook sites/ubuntu-gpu.yml
+        run: ansible-playbook sites/ubuntu-cuda-10.2.yml
