@@ -1,0 +1,23 @@
+---
+- name: Make directory for bundles
+  file:
+    path: ~/.vim/bundle
+    state: directory
+
+- name: Clone Neobundle
+  git:
+    repo: https://github.com/Shougo/neobundle.vim
+    dest: ~/.vim/bundle/neobundle.vim
+
+- name: Clone Vimproc
+  git:
+    repo: https://github.com/Shougo/vimproc.vim
+    dest: ~/.vim/bundle/vimproc.vim
+
+- name: Make Vimproc
+  make:
+    chdir: ~/.vim/bundle/vimproc.vim
+
+- name: NeoBundle install
+  shell: >
+    DOTFILES_DIR={{ dotfiles_repo_local_destination }} ~/.vim/bundle/neobundle.vim/bin/neoinstall

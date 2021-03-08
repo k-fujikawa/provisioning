@@ -1,3 +1,4 @@
+---
 - block:
   - name: Ensure MAS is installed.
     homebrew: name=mas state=present

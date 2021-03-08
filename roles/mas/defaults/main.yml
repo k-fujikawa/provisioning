@@ -1,3 +1,4 @@
+---
 mas_installed_apps:
   - { id: 409183694, name: Keynote }
   - { id: 405399194, name: Kindle }

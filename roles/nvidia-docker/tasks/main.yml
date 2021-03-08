@@ -1,3 +1,4 @@
+---
 - block:
   - name: nvidia-docker (v2) release key is registered
     apt_key:

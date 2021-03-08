@@ -1,0 +1,9 @@
+---
+# Config for dotfiles
+dotfiles_repo: https://github.com/k-fujikawa/.dotfiles.git
+dotfiles_repo_version: develop
+dotfiles_repo_local_destination: ~/git/github.com/k-fujikawa/.dotfiles
+
+# Flags to setup
+dotfiles_setup_zsh: true
+dotfiles_setup_vim: true

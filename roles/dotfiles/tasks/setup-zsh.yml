@@ -1,0 +1,11 @@
+---
+- name: Change default shell
+  user:
+    name: "{{ ansible_ssh_user }}"
+    shell: /bin/zsh
+
+- name: Clone zplug
+  git:
+    repo: https://github.com/zplug/zplug.git
+    dest: ~/.zplug
+    version: master

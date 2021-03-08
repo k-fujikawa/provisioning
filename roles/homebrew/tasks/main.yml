@@ -1,3 +1,4 @@
+---
 - block:
   - name: homebrew tap
     homebrew_tap:

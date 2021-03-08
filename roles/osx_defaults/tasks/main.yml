@@ -1,3 +1,4 @@
+---
 - block:
   - name: キーリピート検知待ち時間
     osx_defaults:
