@@ -1,6 +1,7 @@
 # Provisioning
 
 ![](https://github.com/k-fujikawa/provisioning/workflows/ubuntu-cuda-10.2/badge.svg)
+![](https://github.com/k-fujikawa/provisioning/workflows/ubuntu-cuda-11.2/badge.svg)
 
 - [Ubuntu](#ubuntu)
 - [MacOS](#MacOS)
