@@ -1,6 +1,7 @@
 # Provisioning
 
 ![](https://github.com/k-fujikawa/provisioning/workflows/ubuntu-cuda-10.2/badge.svg)
+![](https://github.com/k-fujikawa/provisioning/workflows/ubuntu-cuda-11.2/badge.svg)
 
 - [Ubuntu](#ubuntu)
 - [MacOS](#MacOS)
@@ -39,6 +40,15 @@ logout
 
 ```
 docker run --runtime=nvidia --rm nvidia/cuda nvidia-smi
+```
+
+#### Upgrade CUDA packages
+
+Uninstall old packages and re-run ansible-playbook.
+
+```
+sudo apt-get --purge remove "nvidia-*" "cuda-*"
+ansible-playbook sites/ubuntu-cuda-11.2.yml --ask-become-pass
 ```
 
 ## MacOS
