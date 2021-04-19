@@ -11,6 +11,9 @@
     - role: vim
       become: yes
 
+    - role: gantsign.bat
+      become: yes
+
     - role: geerlingguy.docker
       docker_package: "docker-{{ docker_edition }}=5:18.09.5~3-0~ubuntu-bionic"
       docker_compose_version: "1.22.0"
@@ -21,7 +24,7 @@
     # https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/
     - role: nvidia.nvidia_driver
       nvidia_driver_ubuntu_install_from_cuda_repo: yes
-      nvidia_driver_ubuntu_branch: 450
+      nvidia_driver_package_version: "455.45.01-1"  # CUDA 11.2
       nvidia_driver_skip_reboot: yes
       become: yes
 

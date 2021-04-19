@@ -2,3 +2,4 @@
 - src: nvidia.nvidia_driver
   version: v2.0.0
 - src: nvidia.nvidia_docker
+- src: gantsign.bat

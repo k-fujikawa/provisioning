@@ -11,6 +11,9 @@
     - role: vim
       become: yes
 
+    - role: gantsign.bat
+      become: yes
+
     - role: geerlingguy.docker
       docker_package: "docker-{{ docker_edition }}=5:18.09.5~3-0~ubuntu-bionic"
       docker_compose_version: "1.22.0"
