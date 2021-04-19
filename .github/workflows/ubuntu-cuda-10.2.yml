@@ -16,4 +16,4 @@ jobs:
       - name: Install ansible-galaxy modules
         run: ansible-galaxy install -r requirements.yml --force
       - name: Run ansible playbooks
-        run: ansible-playbook sites/ubuntu-cuda-10.2.yml
+        run: ansible-playbook -e ansible_python_interpreter=/usr/bin/python3 sites/ubuntu-cuda-10.2.yml
