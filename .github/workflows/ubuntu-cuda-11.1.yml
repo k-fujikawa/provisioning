@@ -1,4 +1,4 @@
-name: ubuntu-cuda-11.2
+name: ubuntu-cuda-11.1
 on:
   push:
   schedule:
@@ -16,4 +16,4 @@ jobs:
       - name: Install ansible-galaxy modules
         run: ansible-galaxy install -r requirements.yml --force
       - name: Run ansible playbooks
-        run: ansible-playbook sites/ubuntu-cuda-11.2.yml
+        run: ansible-playbook sites/ubuntu-cuda-11.1.yml

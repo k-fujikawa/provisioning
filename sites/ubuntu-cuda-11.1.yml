@@ -24,7 +24,7 @@
     # https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/
     - role: nvidia.nvidia_driver
       nvidia_driver_ubuntu_install_from_cuda_repo: yes
-      nvidia_driver_ubuntu_branch: 450
+      nvidia_driver_package_version: "455.45.01-1"  # CUDA 11.2
       nvidia_driver_skip_reboot: yes
       become: yes
 
