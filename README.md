@@ -27,7 +27,7 @@ cd $HOME/git/github.com/k-fujikawa/provisioning
 
 ```
 ansible-galaxy install -r requirements.yml
-ansible-playbook sites/ubuntu-cuda-10.2.yml --ask-become-pass
+ansible-playbook sites/ubuntu-cuda-11.1.yml --ask-become-pass
 ```
 
 #### Re-login
@@ -48,7 +48,7 @@ Uninstall old packages and re-run ansible-playbook.
 
 ```
 sudo apt-get --purge remove "nvidia-*" "cuda-*"
-ansible-playbook sites/ubuntu-cuda-11.2.yml --ask-become-pass
+ansible-playbook sites/ubuntu-cuda-11.1.yml --ask-become-pass
 ```
 
 ## MacOS
