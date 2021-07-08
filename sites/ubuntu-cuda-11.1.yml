@@ -15,8 +15,6 @@
       become: yes
 
     - role: geerlingguy.docker
-      docker_package: "docker-{{ docker_edition }}=5:18.09.5~3-0~ubuntu-bionic"
-      docker_compose_version: "1.22.0"
       docker_users: ["{{ ansible_user_id }}"]
       become: yes
 
@@ -28,7 +26,5 @@
       nvidia_driver_skip_reboot: yes
       become: yes
 
-    - role: nvidia-docker
-      nvidia_docker_version: 2.0.3
-      nvidia_docker_docker_version: 18.09
+    - role: nvidia.nvidia_docker
       become: yes
