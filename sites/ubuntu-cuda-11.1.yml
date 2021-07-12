@@ -26,5 +26,6 @@
       nvidia_driver_skip_reboot: yes
       become: yes
 
-    - role: nvidia.nvidia_docker
+    - role: nvidia-docker
+      nvidia_docker_version: 2.6.0
       become: yes
