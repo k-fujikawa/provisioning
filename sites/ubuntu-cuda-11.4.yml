@@ -1,0 +1,31 @@
+---
+- hosts: localhost
+  connection: local
+  roles:
+    - role: apt
+      become: yes
+
+    - role: git-lfs
+      become: yes
+
+    - role: vim
+      become: yes
+
+    - role: gantsign.bat
+      become: yes
+
+    - role: geerlingguy.docker
+      docker_users: ["{{ ansible_user_id }}"]
+      become: yes
+
+    # Find nvidia driver version below:
+    # https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/
+    - role: nvidia.nvidia_driver
+      nvidia_driver_ubuntu_install_from_cuda_repo: yes
+      nvidia_driver_package_version: "470.42.01-1"  # CUDA 11.4
+      nvidia_driver_skip_reboot: yes
+      become: yes
+
+    - role: nvidia-docker
+      nvidia_docker_version: 2.6.0
+      become: yes
