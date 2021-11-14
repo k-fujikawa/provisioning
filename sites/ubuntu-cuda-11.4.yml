@@ -20,9 +20,10 @@
 
     # Find nvidia driver version below:
     # https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/
+    # https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html#cuda-major-component-versions
     - role: nvidia.nvidia_driver
       nvidia_driver_ubuntu_install_from_cuda_repo: yes
-      nvidia_driver_package_version: "470.42.01-1"  # CUDA 11.4
+      nvidia_driver_package_version: "470.82.01-1"  # CUDA 11.4
       nvidia_driver_skip_reboot: yes
       become: yes
 

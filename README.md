@@ -19,15 +19,15 @@ sudo apt-get update -y && sudo apt-get install -y ansible
 
 ```
 mkdir -p $HOME/git/github.com/k-fujikawa
-git clone git@github.com:k-fujikawa/provisioning.git $HOME/git/github.com/k-fujikawa/provisioning
 cd $HOME/git/github.com/k-fujikawa/provisioning
+git clone git@github.com:k-fujikawa/provisioning.git
 ```
 
 #### Run Ansible playbooks
 
 ```
 ansible-galaxy install -r requirements.yml
-ansible-playbook sites/ubuntu-cuda-11.1.yml --ask-become-pass
+ansible-playbook sites/ubuntu-cuda-11.4.yml --ask-become-pass
 ```
 
 #### Re-login
